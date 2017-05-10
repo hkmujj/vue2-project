@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>免密登录</title>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="render" content="webkit">
+  <script>
+    var _ux21et = (new Date()).getTime();
+    function Rem() {
+      var docEl = document.documentElement;
+      var oSize = docEl.clientWidth / 7.5;
+      if (oSize > 85) {
+        oSize = 85;
+      }
+      docEl.style.fontSize = oSize + 'px';
+    }
+    window.addEventListener('resize', Rem, false);
+    Rem();
+  </script>
+  <style>
+    html,body{
+      font-size:20px;
+      margin:0;
+      padding:0;
+    }
+    *{
+      outline: none;
+      box-sizing: border-box;
+      padding:0;
+      margin:0;
+    }
+
+  </style>
+</head>
+<body>
+<div id="app"></div>
+</body>
+</html>

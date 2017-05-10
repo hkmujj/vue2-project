@@ -1,0 +1,19 @@
+.ui-btn{
+  display: block;
+  line-height: 1rem;
+  height: 1rem;
+  width: 100%;
+  border: 0;
+  text-align: center;
+  background-color: #0090ff;
+  color: #fff;
+  font-size: .36rem;
+  border-radius: .08rem;
+  outline: none;
+  margin:0 auto;
+}
+
+.ui-btn:active{
+  background-color: #007cdb;
+  color: #fff;
+}
