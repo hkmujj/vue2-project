@@ -94,5 +94,4 @@
     font-size: .32rem;
     height: 4.88rem;
   }
-
 </style>
