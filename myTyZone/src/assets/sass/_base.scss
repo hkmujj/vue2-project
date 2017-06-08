@@ -1,0 +1,72 @@
+body, h1, h2, h3, h4, h5, p, div, dl, dt, dd, ul, ol, li, pre, figcaption, figure, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+}
+body, button, input, select, textarea {
+  font-family: "Apple LiSung Light", "Helvetica", "Microsoft YaHei", \5FAE\8F6F\96C5\9ED1, "sans-serif";
+}
+address, cite, dfn, em, var, i {
+  font-style: normal;
+}
+ul, ol, li {
+  list-style: none;
+}
+hr {
+  height: 1px;
+  border: 0;
+}
+
+a, div, span {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+}
+img {
+  pointer-events: none;
+}
+html, img, a, input, select, textarea {
+  border-radius: 0;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-appearance: none;
+}
+input::-webkit-input-placeholder {
+  color: #CCC !important;
+}
+.css {
+  //css 加速
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+
+/* 处理 a input button 元素获取焦点 外边线 消失 */
+
+a, input, button, select {
+  &:hover, &:active, &:focus {
+    outline: none;
+  }
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html, body {
+  //内容点击高亮
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-text-size-adjust: none;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}

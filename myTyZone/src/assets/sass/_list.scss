@@ -1,0 +1,233 @@
+@charset 'UTF-8';
+.list {
+  position: relative;
+  margin-top: 0;
+  margin-top: .2rem;
+  margin-bottom: .2rem;
+  padding-left: 0;
+  list-style: none;
+  background-color: #fff;
+  display: block;
+  // 0.5像素边框
+  &:before, &:after {
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #e5e5e5;
+  }
+
+  &:before {
+    top: 0;
+  }
+  &:after {
+    bottom: 0;
+  }
+  .list-item {
+    position: relative;
+    padding: .3rem .4rem;
+    .list-item-a{
+      display: block;
+      color:#000;
+
+    }
+    // 列表项底边
+    &:after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: .4rem;
+      height: 1px;
+      content: '';
+      -webkit-transform: scaleY(.5);
+      transform: scaleY(.5);
+      background-color: #e5e5e5;
+    }
+    &:last-child:after {
+      height: 0;
+    }
+    .icon {
+      display: block;
+      float: left;
+      width: .56rem;
+      height: .56rem;
+      margin-top: -.06rem;
+      margin-right: .24rem;
+      margin-bottom: -.24rem;
+    }
+    .list-title-block {
+      display: block;
+      float: left;
+      margin-top: -.3rem;
+      margin-bottom: -.3rem;
+      padding: .1rem 0;
+      .list-subtitle {
+        font-size: .28rem;
+        color: #888;
+      }
+      .title-warning {
+        color: #FF3333;
+        position: relative;
+        margin-left: .24rem;
+        line-height: .32rem;
+        &:after {
+          background-image: image_url("/static/images/icons/icon-warning.png");
+        }
+      }
+      .with-icon {
+        padding-left: .4rem;
+        &:after {
+          content: ' ';
+          position: absolute;
+          top: -0.04rem;
+          left: 0;
+          width: .32rem;
+          height: .32rem;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          background-position: center center;
+        }
+      }
+    }
+    .list-title {
+      line-height: .46rem;
+    }
+    .list-value {
+      line-height: .46rem;
+      display: block;
+      float: right;
+      color: #888;
+      font-size: .28rem;
+      &.list-value-fail {
+        font-size: .28rem;
+        margin-right: 0;
+        color: #f33;
+      }
+      &.list-value-success {
+        font-size: .28rem;
+        margin-right: 0;
+        color: #66be3d;
+      }
+      &.list-value-warning {
+        color: #f08221;
+      }
+      .title-warning {
+        color: #FF3333;
+        position: relative;
+        margin-right: .2rem;
+        line-height: .4rem;
+        &:after {
+          background-image: image_url("/static/images/icons/icon-warning.png");
+        }
+      }
+      .with-icon {
+        padding-left: .4rem;
+        &:after {
+          content: ' ';
+          position: absolute;
+          top: -0.04rem;
+          left: 0;
+          width: .4rem;
+          height: .4rem;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          background-position: center center;
+        }
+      }
+    }
+    .list-value-primary {
+      color: #000;
+    }
+    .list-value-img {
+      overflow: hidden;
+      width: .88rem;
+      height: .88rem;
+      margin-top: -.22rem;
+      margin-bottom: -.22rem;
+      border-radius: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .list-value-switch {
+      margin-top: -.1rem;
+    }
+    .list-input {
+      font-size: .32rem;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .radio-label {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .list-radio {
+      position: absolute;
+      right: .4rem;
+      display: inline-block;
+      width: .34rem;
+      height: .26rem;
+      margin-top: .1rem;
+      opacity: 0;
+      background-image: url(/static/images/icons/icon-checked.png) no-repeat 0 0;
+      background-size: 100% 100%;
+    }
+    .list-radio:checked {
+      opacity: 1;
+    }
+    &:before {
+        position: absolute;
+        top: 50%;
+        right: .4rem;
+        width: 10px;
+        height: 10px;
+        content: ' ';
+        -webkit-transform: translateY(-50%) rotate(45deg);
+        transform: translateY(-50%) rotate(45deg);
+        border: 2px solid #ddd;
+        border-bottom-width: 0;
+        border-left-width: 0;
+      }
+      &:active {
+        background: #ECECEC;
+      }
+      .list-value {
+        margin-right: .34rem;
+      }
+  
+  }
+}
+.list-group-name {
+  margin-top: .34rem;
+  margin-bottom: -.1rem;
+  margin-left: .34rem;
+  color: #999;
+}
+
+.icon-account-safe {
+   background-image: url(/static/images/icon-account-safe.png);
+}
+.icon-login-log {
+   background-image: url(/static/images/icon-login-log.png);
+}
+.icon-change-password {
+   background-image: url(/static/images/icon-change-password.png);
+}
+.icon-about-account {
+   background-image: url(/static/images/icon-about-account.png);
+}
+.icon-relate-product {
+   background-image: url(/static/images/icon-relate-product.png);
+}
+
+.icon {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
